@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/3326e124a7.js" crossorigin="anonymous"></script>
+    <title>PayValidate</title>
+</head>
+<body>
+    <section class="container">
+        <div class="details">
+            <div>
+                <p>You're Paying,</p>
+                <h1>$550.00</h1>
+            </div>
+            <div class="items">
+                <div class="item-group">
+                    <p class="item-name"> Zara Jeans</p>
+                    <p class="item-amount">$150.00</p>
+                </div>
+                <div class="item-group">
+                    <p class="item-name"> Floral Dress</p>
+                    <p class="item-amount">$50.00</p>
+                </div>
+                <div class="item-group">
+                    <p class="item-name"> Dior Sunglasses</p>
+                    <p class="item-amount">$250.00</p>
+                </div>
+                <div class="item-group">
+                    <p class="item-name"> Summer Purse</p>
+                    <p class="item-amount">$150.00</p>
+                </div>
+                
+            </div>
+            <hr>
+
+            <div class="item-group">
+                <p class="item-name"> Tax</p>
+                <p class="item-amount">$0.00</p>
+            </div>
+
+            <div class="item-group">
+                <p class="item-name"> Total</p>
+                <p class="item-amount">$550.00</p>
+            </div>
+
+        </div>
+        <div class="main-section">
+            <h1 class="header-text">Complete Your Payment!</h1>
+            <p> To complete your payment, input your card details to make payment. You will be redirected to your banks authorization page </p>
+            <div class="form-section">
+                <form action="" method="post" >
+                    <div class="input-group">
+                        <label for="card_name">Card Holder Name</label>
+                        <div class="input-field">
+                            <i class="fa-regular fa-user"></i>
+                            <input type="text" name="card_name" value="" placeholder="Martha Smith"
+                            required >
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label for="card_number">Card Number</label>
+
+                        <div class="input-field">
+                            <i class="fa-brands fa-cc-mastercard"></i>
+                            <input type="number" name="card_number" value="" placeholder="1234 5678 9012 3456" onkeydown=false onwheel=false
+                            required>
+                        </div>
+                    </div>
+
+                    <div class="input-group row-2">
+                        <div>
+                            <label for="expiry_date">Expiry Date</label>
+                            <div class="input-field">
+                                <!-- <i class="fa-regular fa-calendar"></i> -->
+                                <input type="month" name="expiry_date" value="" placeholder="04 / 06"
+                                required>
+                            </div>
+                            
+                        </div>
+                        <div class="w-100">
+                            <label for="cvv">CVV</label>
+                            <div class="input-field">
+                                <input type="number" name="cvv" value="" id="cvv" placeholder="123"
+                            required>
+                            </div>
+                            
+                        </div>
+                         
+                    </div>
+                    <button type="submit">Pay</button>
+                </form>
+            </div>
+            
+        </div>
+       
+       
+    </section>
+    
+</body>
+</html>
