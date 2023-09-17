@@ -50,6 +50,40 @@ button {
     font-family: inherit;
 }
 
+.message {
+    position: relative;
+    font-size: 12px;
+    width: auto;
+    margin: 10px 40px 10px 60px;
+    /* margin-left: 60px; */
+
+    border-radius: 5px;
+    padding: 5px;
+    display: none;
+}
+
+.show-message {
+    display: flex;
+    justify-content: center;
+}
+
+.error {
+    border: 1px solid rgba(255, 195, 194, 0.5);
+    background-color: rgba(255, 195, 194, 0.5); 
+    color:  rgba(130, 10, 8, 1)
+}
+
+.success {
+    border: 1px solid rgba(228, 230, 219,0.5);;
+    background-color: rgba(228, 230, 219,0.5);
+    color: rgba(59, 71, 4, 1);
+}
+
+.close {
+ position: absolute;
+ right: 40px;
+}
+
 .input-group {
     margin-bottom: 20px;
 }
@@ -200,6 +234,10 @@ input {
         margin-top: 20px;
         padding: 0px;
     }
+
+    .message {
+        margin: 10px 20px;
+    }
  
   }
 
@@ -237,6 +275,10 @@ input {
     .row-2 {
         grid-template-columns: 60% 35%;
        
+    }
+
+    .message {
+        margin: 10px 20px;
     }
  
   }
